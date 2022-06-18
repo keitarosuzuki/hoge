@@ -103,7 +103,7 @@ function btnEvent(btnVal){
         if(btnVal == "acReset"){
             
             // リセットする
-            if(confirm("開閉状態をリセットします")){
+            if(confirm("開閉状態をストレージからリセットしますか？")){
                 //ローカルストレージ初期化
                 localStorage.removeItem("acCardFlag");
                 alert("開閉状態がストレージからリセットされました")
@@ -131,7 +131,7 @@ function AlertMes(){
     alert("１．開閉状態をストレージに保存します\n"
         + "※ブラウザを更新して動作確認してみてください\n\n"
         + "２．OPEN・CLOSEボタンで全カードの開閉ができます\n\n"
-        + "３．RESETボタンで全ての情報をリセットできます");
+        + "３．RESETボタンで全ての情報を端末ストレージからリセットできます");
 }
 
 
